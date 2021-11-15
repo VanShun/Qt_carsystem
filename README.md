@@ -1,6 +1,7 @@
 简易的桌面系统，包含4个子功能（音频、视频播放、天气预报、地图）用于练手
 其中，音视频播放主要运用了mplayer，QProgress等；关于mplayer的使用，参考：https://www.cnblogs.com/huangpeng1990/p/4364373.html  主要是一些命令行指令
 天气预报和地图主要运用了QJason及网络请求QNetworkAcessManager/QNetworkReply等相关类，调用一些api，然后解析Jason数据，下面是一段应该挺典型通用的Jason数据及其解析代码：
+
 /*
 {
 "reason":"查询成功!",
@@ -15,6 +16,8 @@
 "error_code":0
 }
 */
+
+
 //处理收到的 json 数据
 void WeatherWindow::replyFinished(QNetworkReply *reply)
 {
