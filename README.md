@@ -19,6 +19,8 @@
 
 
 //处理收到的 json 数据
+
+
 void WeatherWindow::replyFinished(QNetworkReply *reply)
 {
     QByteArray array = reply->readAll();
